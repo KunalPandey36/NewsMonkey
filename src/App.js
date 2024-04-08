@@ -13,6 +13,9 @@ export default class App extends Component {
       <BrowserRouter>
         <Navbar/>
         <Routes>
+        <Route exact  path='/NewsMonkey' element={<div>
+            <New key="general" pagesize={8} country="in" category="General"/>
+            </div>}/>
         <Route exact  path='/' element={<div>
             <New key="general" pagesize={8} country="in" category="General"/>
             </div>}/>
